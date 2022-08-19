@@ -14,7 +14,7 @@
 	"credentialSubject" : {
        		"id" : "did:key:wallet AltMe",
        		"type" : "TalaoAssociatedAddress",
-          	"associatedAddress" : "0x1345765476547654",
+          	"associatedAddress" : "0x5afa04fb1108ad9705526cf980a2d5122a5817fa",
 		"accountName" : "Account 1"
 	}
 }
