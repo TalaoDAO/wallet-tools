@@ -2,8 +2,6 @@
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
         {
-            "name" : "https://schema.org/name",
-            "description" : "https://schema.org/description",
             "MembershipCard_1" : {
                 "@id": "https://github.com/TalaoDAO/context/blob/main/README.md",
                 "@context": {
@@ -29,6 +27,8 @@
                             "category" : "schema:category",
                             "duration" : "schema:duration",
                             "endDate" : "schema:date",
+                             "analytics" : "schema:website",
+                            "userGuide" : "schema:userGuide",
                             "cardPrice": {
                                 "@context": {
                                     "@version": 1.1,
@@ -102,34 +102,6 @@
     "id": "urn:uuid:random",
     "type": ["VerifiableCredential", "MembershipCard_1"],
     "issuer": "did:tz:issuer",
-    "name" : [ 
-        {
-            "@value": "5% off Tezotopia NFTs",
-            "@language": "en"
-        },
-        {
-            "@value": "5% off Tezotopia NFTs",
-            "@language": "de"
-        },
-        {
-            "@value": "5% de reduction sur les NFT Tezotopia",
-            "@language": "fr"
-        }
-    ],
-    "description" : [
-        {
-            "@language": "en",
-            "@value": "Get a Tezotopia Membership card"
-        },
-        {
-            "@language": "de",
-            "@value": "Erhalten Sie 5 % Rabatt auf Ihren ersten Tezotop-Block!"
-        },
-        {
-            "@language": "fr",
-            "@value": "Get a Tezotopia Membership card"
-        }
-    ],
     "credentialSubject" : {
         "id" : "did:wallet",
         "type" : "MembershipCard_1",
@@ -142,6 +114,8 @@
             "endDate" : "2022-06-08T19:55:00Z",
             "category" : "membershipcard",
             "duration" : "360",
+             "analytics" : "",
+            "userGuide" :  "https://altme.io/#steps-03-575161",
             "cardPrice" : {
                 "currency" : "EUR",
                 "value" : "50"
@@ -153,6 +127,7 @@
             "offeredBy": {
                 "logo": "ipfs://QmZmdndUVRoxiVhUnjGrKnNPn8ah3jT8fxTCLMnAzRAFFZ",
                 "name": "GifGames",
+                "website" : "https://tezotopia.com",
                 "description" : "gaming platform Tezotopia",
                 "paymentMethod" : {
                     "blockchain" : "Tezos",
