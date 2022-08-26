@@ -10,6 +10,8 @@
                     "schema" : "https://schema.org/",
                     "id": "@id",
                     "type": "@type",
+                    "ageRange" : "schema:ageRange",
+                    "addressCountry" : "schema:addressCountry",
                     "associatedAddress" : {
                         "@id": "https://schema.org/address",
                         "@context" : {
@@ -105,6 +107,8 @@
     "credentialSubject" : {
         "id" : "did:wallet",
         "type" : "MembershipCard_1",
+        "ageRange" : "",
+        "addressCountry" : "",
         "associatedAddress" : {
                 "blockchainTezos" : "tz1345765476547654",
                 "blockchainEthereum" : "0x1345765476547654"
