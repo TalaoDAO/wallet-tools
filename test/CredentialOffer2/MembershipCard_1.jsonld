@@ -110,8 +110,7 @@
         "ageRange" : "",
         "addressCountry" : "",
         "associatedAddress" : {
-                "blockchainTezos" : "tz1345765476547654",
-                "blockchainEthereum" : "0x1345765476547654"
+                "blockchainTezos" : ""
         },
         "offers" : {
             "startDate" : "2022-04-08T19:55:00Z",
