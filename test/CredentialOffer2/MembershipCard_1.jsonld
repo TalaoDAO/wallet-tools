@@ -116,16 +116,16 @@
             "startDate" : "2022-04-08T19:55:00Z",
             "endDate" : "2022-06-08T19:55:00Z",
             "category" : "membershipcard",
-            "duration" : "360",
+            "duration" : "365",
              "analytics" : "",
             "userGuide" :  "https://altme.io/#steps-03-575161",
             "cardPrice" : {
                 "currency" : "EUR",
-                "value" : "50"
+                "value" : "0"
             },
             "benefit" : {
                 "category" : "discount",
-                "discount" : "5%"
+                "discount" : ""
             },    
             "offeredBy": {
                 "logo": "ipfs://QmZmdndUVRoxiVhUnjGrKnNPn8ah3jT8fxTCLMnAzRAFFZ",
