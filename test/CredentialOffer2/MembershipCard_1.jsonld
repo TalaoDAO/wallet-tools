@@ -57,15 +57,7 @@
                                     "website" : "schema:website",
                                     "logo": {"@id" : "schema:image", "@type" : "@id"},
                                     "did" : "schema:identifier",
-                                    "name" : "schema:name",
-                                    "paymentMethod" : {
-                                        "@id" : "schema:paymentMethod",
-                                        "@context" : {
-                                            "currency" : "schema:currency",
-                                            "blockchain" : "schema:name",
-                                            "blockchainAccount" : "schema:identifier"
-                                        }
-                                    }
+                                    "name" : "schema:name"         
                                 }
                             }
                         }
@@ -78,23 +70,7 @@
                             "website" : "schema:website",
                             "logo": {"@id" : "schema:image", "@type" : "@id"},
                             "did" : "schema:identifier",
-                            "name" : "schema:name",
-                            "paymentAccepted" : {
-                                "@id" : "schema:paymentMethod",
-                                "@context" : {
-                                    "currency" : "schema:currency",
-                                    "blockchain" : "schema:name",
-                                    "blockchainAccount" : "schema:identifier"
-                                }
-                            },
-                            "paymentMethod" : {
-                                "@id" : "schema:paymentMethod",
-                                "@context" : {
-                                    "currency" : "schema:currency",
-                                    "blockchain" : "schema:name",
-                                    "blockchainAccount" : "schema:identifier"
-                                } 
-                            }
+                            "name" : "schema:name"
                         }
                     }
                 }
@@ -131,27 +107,12 @@
                 "logo": "ipfs://QmZmdndUVRoxiVhUnjGrKnNPn8ah3jT8fxTCLMnAzRAFFZ",
                 "name": "GifGames",
                 "website" : "https://tezotopia.com",
-                "description" : "gaming platform Tezotopia",
-                "paymentMethod" : {
-                    "blockchain" : "Tezos",
-                    "currency" : "XTZ",
-                    "blockchainAccount" : "tz1iyjrTUNxDpPaqNZ84ipGELAcTWYg66789"
-                }
+                "description" : "gaming platform Tezotopia"
             }
         },
         "issuedBy": {
             "logo": "ipfs://QmZmdndUVRoxiVhUnjGrKnNPn8ah3jT8fxTCLMnAzRAFFZ",
-            "name": "Talao",
-            "paymentAccepted" : {
-                "blockchain" : "Tezos",
-                "currency" : "XTZ",
-                "blockchainAccount" : "tz1NyjrTUNxDpPaqNZ84ipGELAcTWYg6s5Du"
-            },
-            "paymentMethod" : {
-                "blockchain" : "Tezos",
-                "currency" : "XTZ",
-                "blockchainAccount" : "tz1NyjrTUNxDpPaqNZ84ipGELAcTWYg6s5Du"
-            }
+            "name": "Talao"
         }
     }
 }
