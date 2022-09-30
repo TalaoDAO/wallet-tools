@@ -1,0 +1,39 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "AragoEmailPass" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.md#aragoemailpass",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "email": "schema:email",
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name"
+                        }
+                    }
+                   
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "AragoEmailPass"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "type" : "AragoEmailPass",
+        "email" : "",
+        "passbaseMetadata" : "",
+        "issuedBy" : {
+            "name" : "Arago"
+        }
+    }
+}
