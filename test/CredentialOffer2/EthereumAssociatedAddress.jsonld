@@ -25,7 +25,7 @@
        		"id" : "did:key:wallet AltMe",
        		"type" : "EthereumAssociatedAddress",
           	"associatedAddress" : "0x9433fd38ea335c84d74fd60332dd2ede6df9ca4c",
-		    "accountName" : "Account 1",
+		    "accountName" : "Metamask  #1",
 			"issuedBy" : {"name" : "Altme"}
 	}
 }
