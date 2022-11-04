@@ -24,8 +24,8 @@
 	"credentialSubject" : {
        		"id" : "did:key:wallet AltMe",
        		"type" : "EthereumAssociatedAddress",
-          	"associatedAddress" : "0x9433fd38ea335c84d74fd60332dd2ede6df9ca4c",
-		    "accountName" : "Metamask  #1",
+          	"associatedAddress" : "0x8883fd38ea335c84d74fd60332dd2ede6df94ee2",
+		    "accountName" : "Metamask  account 1",
 			"issuedBy" : {"name" : "Altme"}
 	}
 }
