@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://vocabulary.vc.compell.io/credentials.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "PCDSAgentCertificate"
+  ],
+  "id": "urn:id:637fd79025082",
+  "issuer": "did:key:GJ9cbtb2PkNSbEapuuHA2k4nntnU6rk2kom35cfdc35z6Mht",
+  "issuanceDate": "2022-11-24T20:44:00Z",
+  "credentialSubject": {
+    "id": "did:key:35b2PkGJ9cb235z6Mk4nntnUcfdcphtt6rk2komNSbEauuHA",
+    "pcdsAgentOf": {
+      "organization": {
+        "identifier": "did:key:z6MkomNP4nntnUcuHA35b2phtt6rkfdcSbEkau2kGJ9cb6EQ",
+        "name": "Compellio SA"
+      },
+      "abilities": [
+        "auditor"
+      ]
+    }
+  }
+}
