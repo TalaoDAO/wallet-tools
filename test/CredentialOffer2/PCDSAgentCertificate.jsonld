@@ -1,7 +1,33 @@
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://vocabulary.vc.compell.io/credentials.jsonld"
+    {
+        "@version": 1.1,
+        "@protected": true,
+        "schema": "https://schema.org/",
+        "credential": "https://vocabulary.vc.compell.io/credentials/",
+        "property": "https://vocabulary.vc.compell.io/properties/",
+        "cmpl": "https://vocabulary.vc.compell.io/types/",
+        "PCDSAgentCertificate": {
+            "@id": "credential:PCDSAgentCertificate"
+        },
+        "pcdsAgentOf": {
+            "@id": "property:pcdsAgentOf",
+            "@context": {
+                "organization": {
+                    "@id": "schema:Organization",
+                    "@context": {
+                        "name": "schema:name",
+                        "identifier": "schema:identifier"
+                    }
+                },
+                "abilities": {
+                    "@id": "cmpl:PCDSAgentAbilitity",
+                    "@container": "@set"
+                }
+            }
+        }
+    }
   ],
   "type": [
     "VerifiableCredential",
@@ -11,6 +37,7 @@
   "issuer": "did:key:GJ9cbtb2PkNSbEapuuHA2k4nntnU6rk2kom35cfdc35z6Mht",
   "issuanceDate": "2022-11-24T20:44:00Z",
   "credentialSubject": {
+    "type" :  "PCDSAgentCertificate",
     "id": "did:key:35b2PkGJ9cb235z6Mk4nntnUcfdcphtt6rk2komNSbEauuHA",
     "pcdsAgentOf": {
       "organization": {
