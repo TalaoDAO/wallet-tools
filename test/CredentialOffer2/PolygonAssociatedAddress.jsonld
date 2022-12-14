@@ -31,7 +31,7 @@
         		"VerifiableCredential",
            		"PolygonAssociatedAddress"
 	],
-	"issuer" : "did:key:crypto_wallet",
+	"issuer" : "did:example:1",
 	"credentialSubject" : {
        		"id" : "did:key:wallet AltMe",
        		"type" : "PolygonAssociatedAddress",
