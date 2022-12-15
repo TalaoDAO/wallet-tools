@@ -1,59 +1,67 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/vc-revocation-list-2020/v1",
         {
-          
-            "LoyaltyCard": {
+            "name" : "https://schema.org/name",
+            "description" : "https://schema.org/description",
+            "LoyaltyCard" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.md#loyaltycard",
                 "@context": {
-                    "@protected": true,
                     "@version": 1.1,
-                    "address": "schema:address",
-                    "email": "schema:email",
-                    "familyName": "schema:familyName",
-                    "givenName": "schema:givenName",
-                    "birthDate" : "schema:birthDate",
-                    "duration" : "schema:duration",
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
                     "id": "@id",
-                    "issuedBy": {
-                        "@context": {
-                            "@protected": true,
+                    "type": "@type",
+                    "givenName" : "schema:givenName",
+                    "familyName" : "schema:familyName",
+                    "telephone" : "schema:telephone",
+                    "address" : "schema:address", 
+                    "birthDate" : "schema:birthDate",
+                    "email" : "schema:email",
+                    "issuedBy" : {
+                        "@id" : "schema:memberOf",
+                        "@context" : {
                             "@version": 1.1,
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
                             "address" : "schema:address",
-                            "logo": {
-                                "@id": "schema:image",
-                                "@type": "@id"
-                            },
-                            "name": "schema:name"
-                        },
-                        "@id": "schema:memberOf"
+                            "name" : "schema:name"
+                        }
                     },
-                    "programName": "schema:programName",
-                    "schema": "https://schema.org/",
-                    "telephone": "schema:telephone",
-                    "type": "@type"
-                },
-                "@id": "https://github.com/TalaoDAO/context#loyaltycard"
+                    "programName" : "schema:programName"
+                }
             }
         }
     ],
-    "id": "urn:uuid:cd8a2a3c-0e22-11ec-9ef1-f37fc4c32c40",
-    "type": [
-        "VerifiableCredential",
-        "LoyaltyCard"
-    ],
-    "issuanceDate" : ""
-    "credentialSubject": {
-        "id": "",
-        "type": "LoyaltyCard",
-        "familyName": "",
-        "programName" : "Tezotopia VIP card Ultra",
-        "duration" : "360",
-        "issuedBy": {
-            "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
-            "address" : "",
-            "name": "Talao"
+    "id": "",
+    "type": ["VerifiableCredential", "LoyaltyCard"],
+    "issuer": "",
+    "issuanceDate": "",
+    "name" : [ 
+        {
+            "@value": "Loyalty card",
+            "@language": "en"
         },
-        "givenName": ""
-    },
-    "issuer": ""
+        {
+            "@value": "Kundenkarte",
+            "@language": "de"
+        },
+        {
+            "@value": "Carte de fidélité",
+            "@language": "fr"
+        }
+    ],
+    "description" : "",
+    "credentialSubject" : {
+        "type" : "LoyaltyCard",
+        "givenName" : "Thierry",
+        "familyName" :"Thevenet",
+        "issuedBy" : {
+            "name" : "The Wine Spririt",
+            "logo" : "https://thewinespirit.co",
+            "address" : "29 rue du Saint Esprit, 31000 Toulouse, France"
+        }
+
+    }
 }
